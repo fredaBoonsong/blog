@@ -43,7 +43,7 @@ google_analytics:
 # disqus(https://disqus.com/)
 disqus:
   comment: true
-  shortname: lemonreds
+  shortname: fredaboonsong
 
 # valine(https://github.com/xCss/Valine)
 # 创建 leancloud 应用 获取 id|key 填入即可
@@ -88,11 +88,8 @@ mathjax:
 # excerpt_ignore [boolean]
 # increase at the top of your article
 # Does this article need to hide the excerpt ?
-# 在文章头部中增加此配置 
-# 文章是否需要显示摘要 默认为显示
 
-# footer
-# 底部信息
+
 footer:
   author: fredaBoonsong
   since: 2018
