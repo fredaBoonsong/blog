@@ -1,9 +1,15 @@
 {
   "name": "blog",
   "version": "0.0.1",
+  "private": true,
+  "hexo": {
+    "version": "3.7.1"
+  },
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "hexo server -i 172.20.0.102 -p 8080 -l",
+    "gen": "hexo generate",
     "deploy": "git subtree push --prefix=public/ blog master",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,10 +17,21 @@
     "type": "git",
     "url": "git+https://github.com/fredaBoonsong/blog.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "fredaBoonsong",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/fredaBoonsong/blog/issues"
   },
-  "homepage": "https://github.com/fredaBoonsong/blog#readme"
+  "homepage": "https://github.com/fredaBoonsong/blog#readme",
+  "dependencies": {
+    "hexo": "^3.7.1",
+    "hexo-generator-archive": "^0.1.5",
+    "hexo-generator-category": "^0.1.3",
+    "hexo-generator-index": "^0.2.1",
+    "hexo-generator-tag": "^0.2.0",
+    "hexo-renderer-ejs": "^0.3.1",
+    "hexo-renderer-marked": "^0.3.2",
+    "hexo-renderer-stylus": "^0.3.3",
+    "hexo-server": "^0.3.2"
+  }
 }
